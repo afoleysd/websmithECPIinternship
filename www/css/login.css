@@ -1,0 +1,105 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: none;
+	padding: none;
+	font-family: "Lato";
+}
+
+#mainContainer{
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+}
+
+#header{
+	width: 100%;
+	height: 15%;
+	padding: none;
+	margin: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: #7DAEC0;
+}
+
+#logo{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+
+#logo img{
+	max-width: 99%;
+	max-height: 99%;	
+	height: auto;
+	margin: auto;
+	display:block;
+}
+
+#loginForm, #forgotForm{
+	width: 60%;
+	margin: auto;
+}
+
+#forgotForm{
+	margin-top: 10px;
+}
+
+a, a:visited, a:hover, a:active{
+	font-size: 0.75em;
+	color: #4F88A3;
+}
+
+input{
+	margin: 5px 0px 5px 0px;
+	text-align: center;
+	border-radius: 8px;
+	width: 100%;
+	color: #000000;
+	border: none;
+	box-shadow: 0px 0px 1px 0px #000000;
+	background: #FAFAFA;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+}
+
+input[type=submit]{
+	background: #7DAEC0;
+	margin-bottom: 75px;
+	color: #FFFFFF;
+}
+
+#forgotContainer{
+	position: absolute;
+    left: 0;
+    top: 38%;	
+    width: 100%;
+    text-align: center;
+	color: #FFFFFF;
+}
+
+#forgotText{
+	font-size: 0.75em;
+}
+
+#fadeoutContainer{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.80);
+	opacity: 0;
+	display: none;
+}
+
+#fadeoutContainer img{
+	position: absolute;
+	left: 85%;
+	top: 20%;
+	height: 25px;
+	width: auto;
+}

@@ -1,0 +1,106 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: none;
+	padding: none;
+	font-family: "Lato";
+	overflow: hidden;
+}
+
+#missingStudies{
+	background: #F0F0F0;
+	width: 100%;
+	height: 6%;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 2.25vh;
+}
+
+a, a:hover, a:visited, a:active, a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+.missingStudyOdd, .missingStudyEven{
+	height: 100%;
+	margin: auto;
+	font-size: 2.25vh;
+}
+
+.missingStudyEven{
+	background: #FAFAFA;	
+}
+
+.missingStudyOdd{
+	background: #F0F0F0;
+}
+
+.missingNames{
+	width: 100%;
+	display: flex;	
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+.missingDates{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	top: 0;
+    left: 0;
+}
+
+.studyName{
+	flex: 2;
+}
+
+.studyTimestudy{
+	flex: 2;
+}   
+
+.studyPeriodStart{
+    flex: 2;
+}   
+
+.studyPeriodEnd{
+    flex: 2;
+}   
+
+#progressBar{
+	width: 100%;
+	height: 2%;
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #000;
+	font-size: 1.5vh;
+}
+
+#progressMissing{
+	background: #FF0000;
+	overflow: hidden;
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #000;
+}
+
+#progressInProgress{
+	background: #FFFF00;
+	overflow: hidden;
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #000;
+}
+
+#progressCompleted{
+	background: #00FF00;
+	overflow: hidden;
+	flex: 1;
+	text-align: center;
+}
