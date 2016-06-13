@@ -11,6 +11,5 @@ var app = {
 		var username = window.localStorage.getItem("username");
 		var email = document.getElementById("email");
 		email.value = username;
-		app.receivedEvent('deviceready');
 	}
 };
