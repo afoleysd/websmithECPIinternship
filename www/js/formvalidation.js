@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener("deviceready",function(){
 	var email = document.getElementById("email");
 	var password = document.getElementById("password");
 	var emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 function validateForm(){
 	var email = document.getElementById("email");
-	window.localStorage.setItem("username",email.innerHTML);
+	var storage = window.localStorage;
+	storage.setItem("username",email.value);
 	return true;
 }

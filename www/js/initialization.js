@@ -1,9 +1,16 @@
-document.addEventListener("deviceready",onDeviceReady,false);
-
-function onDeviceReady(){
-	var db = window.openDatabase("test","1.0","TestDB",1000000);
-
-	var username = window.localStorage.getItem("username");
-	var email = document.getElementById("email");
-	email.innerHTML = username;
-}
+var app = {
+	initialize: function() {
+		this.bindEvents();
+	},
+	
+	bindEvents: function() {
+		document.addEventListener('deviceready', this.onDeviceReady, false);
+	},
+	
+	onDeviceReady: function() {
+		var username = window.localStorage.getItem("username");
+		var email = document.getElementById("email");
+		email.value = username;
+		app.receivedEvent('deviceready');
+	}
+};
